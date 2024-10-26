@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex flex-wrap items-center justify-between py-3 px-10 bg-white'>
+    <nav className='flex flex-wrap items-center justify-between py-3 px-2 md:px-10 bg-white'>
       {/* ================================================================== */}
       <Link
         to='/'
@@ -43,6 +43,7 @@ const Navbar = () => {
       <div className='flex md:hidden'>
         <button id='hamburger' onClick={toggleMenu}>
           <img
+            ref={(el) => (navToggleRefs.current[1] = el)}
             className='toggle block'
             src='https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png'
             width='48'
@@ -50,6 +51,7 @@ const Navbar = () => {
             alt=''
           />
           <img
+            ref={(el) => (navToggleRefs.current[2] = el)}
             className='toggle hidden'
             src='https://img.icons8.com/fluent-systems-regular/2x/close-window.png'
             width='48'
@@ -62,26 +64,30 @@ const Navbar = () => {
 
       {/* ================================================================== */}
       <div
-        className='toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-teal-900 md:border-none'
+        className='toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-indigo-900 md:border-none'
         ref={(el) => (navToggleRefs.current[0] = el)}>
         <Link
           to='/'
-          className='block md:inline-block text-teal-900 hover:text-teal-500 px-3 py-3 border-b-2 border-teal-900 md:border-none'>
+          onClick={toggleMenu}
+          className='block md:inline-block text-indigo-900 hover:text-indigo-500 px-3 py-3 border-b-2 border-indigo-900 md:border-none'>
           Home
         </Link>
         <Link
+          onClick={toggleMenu}
           to='/about'
-          className='block md:inline-block text-teal-900 hover:text-teal-500 px-3 py-3 border-b-2 border-teal-900 md:border-none'>
+          className='block md:inline-block text-indigo-900 hover:text-indigo-500 px-3 py-3 border-b-2 border-indigo-900 md:border-none'>
           About
         </Link>
-        <a
-          href='/'
-          className='block md:inline-block text-teal-900 hover:text-teal-500 px-3 py-3 border-b-2 border-teal-900 md:border-none'>
-          blog
-        </a>
         <Link
+          onClick={toggleMenu}
+          to='/'
+          className='block md:inline-block text-indigo-900 hover:text-indigo-500 px-3 py-3 border-b-2 border-indigo-900 md:border-none'>
+          blog
+        </Link>
+        <Link
+          onClick={toggleMenu}
           to='/contact'
-          className='block md:inline-block text-teal-900 hover:text-teal-500 px-3 py-3 border-b-2 border-teal-900 md:border-none'>
+          className='block md:inline-block text-indigo-900 hover:text-indigo-500 px-3 py-3 border-b-2 border-indigo-900 md:border-none'>
           Contact
         </Link>
       </div>
@@ -89,9 +95,9 @@ const Navbar = () => {
 
       {/* ================================================================== */}
       <a
+        ref={(el) => (navToggleRefs.current[3] = el)}
         href='https://api.whatsapp.com/send?phone=+254708864510&text=Hello,more information!'
-        className='toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-teal-900 hover:bg-teal-500 text-white md:rounded'
-        ref={(el) => (navToggleRefs.current[1] = el)}>
+        className='toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-indigo-900 hover:bg-indigo-500 text-white md:rounded'>
         WhatsApp Us
       </a>
       {/* ================================================================== */}

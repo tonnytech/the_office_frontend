@@ -12,7 +12,7 @@ const Hero = () => {
                 online business
               </span> */}
               <span className='block xl:inline'>Welcome To Your New</span>
-              <span className='block text-indigo-600 xl:inline animate-typing'>
+              <span className='block text-indigo-600 xl:inline'>
                 Office Space
               </span>
             </h1>

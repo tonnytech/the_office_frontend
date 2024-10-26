@@ -17,7 +17,7 @@ const Prices = () => {
             </p>
             <h2 className='text-5xl font-bold mb-8 text-purple-600'>Ksh 100</h2>
             <a
-              href='https://api.whatsapp.com/send?phone=+254708864510&text=Hello,more information!'
+              href='https://api.whatsapp.com/send?phone=+254708864510&text=Hello,more information on hourly package!'
               className='bg-purple-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-purple-700 transition duration-300 ease-in-out'>
               Reach Out
             </a>
@@ -32,7 +32,7 @@ const Prices = () => {
             </p>
             <h2 className='text-5xl font-bold mb-8 text-green-600'>Ksh 500</h2>
             <a
-              href='https://api.whatsapp.com/send?phone=+254708864510&text=Hello,more information!'
+              href='https://api.whatsapp.com/send?phone=+254708864510&text=Hello,more information on daily package!'
               className='bg-green-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-green-700 transition duration-300 ease-in-out'>
               Reach Out
             </a>
@@ -49,7 +49,7 @@ const Prices = () => {
               Ksh 6,000
             </h2>
             <a
-              href='https://api.whatsapp.com/send?phone=+254708864510&text=Hello,more information!'
+              href='https://api.whatsapp.com/send?phone=+254708864510&text=Hello,more information on monthly package!'
               className='bg-yellow-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-yellow-700 transition duration-300 ease-in-out'>
               Reach Out
             </a>
