@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <nav className='flex flex-wrap items-center justify-between py-3 px-10 bg-white'>
       {/* ================================================================== */}
-      <a
-        href='/'
+      <Link
+        to='/'
         aria-label='Go home'
         title='Company'
         className='inline-flex items-center'>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
           The Office
         </span>
-      </a>
+      </Link>
       {/* ================================================================== */}
 
       {/* ================================================================== */}
