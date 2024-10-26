@@ -12,6 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Mainpage />} />
+        <Route path='/the_office_frontend/' element={<Mainpage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
