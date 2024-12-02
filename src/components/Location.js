@@ -21,7 +21,8 @@ const Location = () => {
                 height='480'
                 style={{ border: 0 }}
                 allowFullScreen
-                loading='lazy'></iframe>
+                loading='lazy'
+                title='Google Maps view of Tyme Suites, Rongai, Magadi Road'></iframe>
             </div>
             <div>
               <div className='max-w-full mx-auto rounded-lg overflow-hidden'>
