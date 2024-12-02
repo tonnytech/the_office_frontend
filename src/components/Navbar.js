@@ -98,7 +98,10 @@ const Navbar = () => {
         ref={(el) => (navToggleRefs.current[3] = el)}
         href='https://api.whatsapp.com/send?phone=+254708864510&text=Hello,more information!'
         className='toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-indigo-900 hover:bg-indigo-500 text-white md:rounded'>
-        WhatsApp Us
+        <span className="pr-2">
+          <i class='fa-brands fa-whatsapp'></i>
+        </span>
+        <span>WhatsApp Us</span>
       </a>
       {/* ================================================================== */}
     </nav>
